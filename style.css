@@ -1,0 +1,14 @@
+body {
+    max-width: 800px;
+    margin: auto;
+
+    font-family: Georgia, serif;
+
+    line-height: 1.6;
+
+    padding: 40px;
+}
+
+h1 {
+    color: #1f3a5f;
+}
