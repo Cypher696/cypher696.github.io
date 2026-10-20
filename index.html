@@ -10,7 +10,8 @@
     <meta name="description" content="Subhranil Deb - Mathematician, PhD student in mathematics. Research and academic profile.">
     <meta name="robots" content="index, follow">
     <meta name="google-site-verification" content="t-lRH0hyOlmuHuVMi5dr1wF5cQiJHta4LXDLuTmegZU" />
-    <meta name="keywords" content="Subhranil Deb, math, mathematics, geometric langlads, geometric representation theory, PhD, Paris Saclay, Sorbonne , imj-prg">
+    <meta name="keywords" content="Subhranil Deb, math, mathematics, topology, PhD, Subhro, Paris Saclay, Sorbonne , imj-prg">
+    
     <style>
         .contact-section {
             margin-top: 2rem;
@@ -37,11 +38,10 @@
             line-height: 1.5;
         }
 
-        .contact-col a.email-link {
-            color: #c84b1d;
-            text-decoration: none;
+       .contact-col a.email-link {
+        color: #c84b1d; 
+        text-decoration: none;
         }
-
         .contact-col a.email-link:hover {
             text-decoration: underline;
         }
@@ -62,50 +62,109 @@
             background-color: #4b5258;
             color: #ffffff;
         }
+
+        /* Language Toggle Button */
+        .lang-switch {
+            float: right;
+            font-size: 0.9rem;
+            cursor: pointer;
+            color: #4b5258;
+            border: 1px solid #ccc;
+            padding: 2px 8px;
+            border-radius: 4px;
+            background: #f9f9f9;
+        }
     </style>
 </head>
 
 <body>
 <main>
-<h1>Subhranil Deb</h1>
-<p>
-PhD student in Mathematics, 
-<a href="https://www.imj-prg.fr/">IMJ-PRG</a>, Sorbonne Université.<br>
-<strong>Équipe</strong> : Formes Automorphes</p>
-<p>
-I am a PhD student working on affine flag varieties of Kac-Moody groups and double Kazhdan-Lusztig theory. 
-My advisors are <a href="https://perso.imj-prg.fr/alexis-bouthier/">Alexis Bouthier</a> and <a href="https://www.iufrance.fr/les-membres-de-liuf/membre/435-eric-vasserot.html">Éric Vasserot</a>.<br>
-Previously, I did my M2 at Université Paris Saclay where I was advised by <a href="https://sites.google.com/site/olivierschiffmann/">Olivier Schiffmann</a>.<br>
-I did my undergraduate at <a href="https://www.cmi.ac.in/">Chennai Mathematical Institute</a>.
-</p>
+    <button class="lang-switch" onclick="toggleLanguage()">FR / EN</button>
+    <h1>Subhranil Deb</h1>
 
-<p>
-Here is my <a href="cv.pdf">CV</a>.
-</p>
-
-<section class="contact-section">
-    <div class="contact-grid">
-        <div class="contact-col">
-            <h2>Contact</h2>
-            <p><strong>E-mail</strong> : <a href="mailto:subhranil.deb@imj-prg.fr" class="email-link">deb@imj-prg.fr</a></p>
-            <p><strong>Bureau</strong> : 15-16 509</p>
-        </div>
-
-        <div class="contact-col">
-            <h2>Adresse</h2>
-            <p>Institut de Mathématiques de Jussieu<br>
-            - Paris Rive Gauche (IMJ-PRG)</p>
-            <p style="margin-top: 0.75rem;">
-            Sorbonne Université – Campus Pierre et Marie Curie<br>
-            4 place Jussieu,<br>
-            75252 Paris Cedex 5<br>
-            Boite Courrier 247
-            </p>
-            <a href="https://www.imj-prg.fr/acces/" class="btn-acces" target="_blank" rel="noopener">Accès</a>
-        </div>
+    <!-- English Version -->
+    <div class="lang-en">
+        <p>
+        PhD student in Mathematics, 
+        <a href="https://www.imj-prg.fr/">IMJ-PRG</a>, Sorbonne Université.<br>
+        <strong>Team</strong>: Automorphic Forms
+        </p>
+        <p>
+        I am a PhD student working on affine flag varieties of Kac-Moody groups and double Kazhdan-Lusztig theory. 
+        My advisors are <a href="https://perso.imj-prg.fr/alexis-bouthier/">Alexis Bouthier</a> and <a href="https://www.iufrance.fr/les-membres-de-liuf/membre/435-eric-vasserot.html">Éric Vasserot</a>.<br>
+        Previously, I did my M2 at Université Paris Saclay where I was advised by <a href="https://sites.google.com/site/olivierschiffmann/">Olivier Schiffmann</a>.<br>
+        I did my undergraduate at <a href="https://www.cmi.ac.in/">Chennai Mathematical Institute</a>.
+        </p>
+        <p>Here is my <a href="cv.pdf">CV</a>.</p>
     </div>
-</section>
+
+    <!-- French Version -->
+    <div class="lang-fr" style="display: none;">
+        <p>
+        Doctorant en Mathématiques, 
+        <a href="https://www.imj-prg.fr/">IMJ-PRG</a>, Sorbonne Université.<br>
+        <strong>Équipe</strong> : Formes Automorphes
+        </p>
+        <p>
+        Je suis doctorant travaillant sur les variétés de drapeaux affines des groupes de Kac-Moody et la théorie double de Kazhdan-Lusztig. 
+        Mes directeurs de thèse sont <a href="https://perso.imj-prg.fr/alexis-bouthier/">Alexis Bouthier</a> et <a href="https://www.iufrance.fr/les-membres-de-liuf/membre/435-eric-vasserot.html">Éric Vasserot</a>.<br>
+        Auparavant, j'ai effectué mon M2 à l'Université Paris-Saclay sous la direction d'<a href="https://sites.google.com/site/olivierschiffmann/">Olivier Schiffmann</a>.<br>
+        J'ai fait mes études de licence au <a href="https://www.cmi.ac.in/">Chennai Mathematical Institute</a>.
+        </p>
+        <p>Voici mon <a href="cv.pdf">CV</a>.</p>
+    </div>
+
+    <section class="contact-section">
+        <div class="contact-grid">
+            <div class="contact-col">
+                <h2>Contact</h2>
+                <p><strong>E-mail</strong> : <a href="mailto:deb@imj-prg.fr" class="email-link">deb[@]imj-prg.fr</a></p>
+                <p><strong>Bureau</strong> : 15-16 509</p>
+            </div>
+
+            <div class="contact-col">
+                <h2 class="lang-en">Address</h2>
+                <h2 class="lang-fr" style="display: none;">Adresse</h2>
+                <p>Institut de Mathématiques de Jussieu<br>
+                - Paris Rive Gauche (IMJ-PRG)</p>
+                <p style="margin-top: 0.75rem;">
+                Sorbonne Université – Campus Pierre et Marie Curie<br>
+                4 place Jussieu,<br>
+                75252 Paris Cedex 5<br>
+                Boite Courrier 247
+                </p>
+                <a href="https://www.imj-prg.fr/acces/" class="btn-acces" target="_blank" rel="noopener">Accès</a>
+            </div>
+        </div>
+    </section>
 </main>
+
+<script>
+    // Detect browser language or fallback to English
+    var userLang = (navigator.language || navigator.userLanguage || '').toLowerCase();
+    var currentLang = userLang.startsWith('fr') ? 'fr' : 'en';
+
+    function setLanguage(lang) {
+        currentLang = lang;
+        var enElements = document.querySelectorAll('.lang-en');
+        var frElements = document.querySelectorAll('.lang-fr');
+
+        if (lang === 'fr') {
+            enElements.forEach(el => el.style.display = 'none');
+            frElements.forEach(el => el.style.display = 'block');
+        } else {
+            frElements.forEach(el => el.style.display = 'none');
+            enElements.forEach(el => el.style.display = 'block');
+        }
+    }
+
+    function toggleLanguage() {
+        setLanguage(currentLang === 'en' ? 'fr' : 'en');
+    }
+
+    // Run automatically on load
+    setLanguage(currentLang);
+</script>
 
 </body>
 
